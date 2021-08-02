@@ -61,3 +61,92 @@ Quais são as vantagens do REST?
 - Permite integrações entre aplicações e também entre cliente e servidor em páginas web e aplicações
 - Utiliza dos métodos HTTP para definir a operação que está sendo efetuada.
 - Arquitetura de fácil compreensão
+
+**API - Application Programming Interface**
+São conjuntos de rotinas documentados e disponibilizados por uma aplicação para que outras aplicações possam consumir suas funcionalidades. Empresas de tecnologias disponibilizam APIs para acessos de suas funcionalidades.
+
+Principais métodos HTTP:
+- GET - Solicita a representação de um recurso
+- POST - Solicita a criação de um recurso
+- DELETE - Solicita a exclusão de um recurso
+- PUT - Solicita a atualização de um recurso
+
+**JSON - JavaScript Object Notation**
+Formatação leve utilizada para troca de mensagens entre sistemas. É um dos formatos mais populares e utilizados que funciona além do JavaScript.
+
+## REST e HTTP na prática
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+Código de estado
+É utilizado pelo servidor para avisar o cliente sobre o estado da operação solicitada:
+- 1xx - Informativo
+- 2xx - Sucesso
+- 3xx - Redirecionamento
+- 4xx - Erro do Cliente
+- 5xx - Erro do servidor
+
+# Arquiteturas de Sistemas
+
+Tipos de arquitetura:
+- Monolito. É uma unica aplicação que tem acesso aos diversos sistemas. É mais simples.
+- Microserviços #1. Teremos um serviço para cada aplicação, é diferente do monolito.
+- Microserviços #2. Temos agora um message broker e toda comunicação entre os serviços passa por ele, isso gera mais segurança para não perder a mensagem e também deixa mais fácil substituir os serviços.
+- Microserviços #3. Estilo pipeline. O proxy passa o request de serviço para o gerenciador de pipeline, e não mais diretamente ao serviço. Aqui, cada serviço possui uma responsabilidae bem específica.
+
+### Monolito
+
+Prós:
+- Baixa complexidade
+- Monitoriamente simplificado
+
+Contras:
+- Stack única
+- Compartilhamento de recursus
+- Acoplamento
+- Mais complexo a escalabilidade
+
+### Microserviços 1
+
+Prós:
+- Stack dinâmica
+- Simples escalabilidade
+
+Contras:
+- Acoplamento
+- Monitoramento mais complexo
+- Provisionamento mais complexo
+
+### Microserviços 2
+
+Prós:
+- Stack dinâmica
+- Simples escalabilidade
+- Desacoplamento
+
+Contras:
+- Monitoramento mais complexo
+- Provisionamento mais complexo
+
+### Microserviços 3
+
+Prós:
+- Stack dinâmica
+- Simples escalabilidade
+- Desacoplamento
+- Menor complexidade
+
+Contras:
+- Provisionamento mais complexo
+- Plataforma inteira depende do gerenciador de pipeline
+
+## Gerenciamento de errors e volume de acesso
+
+É algo que todas as arquiteturas possuem em comum.
+
+Onde é mais complexo:
+- Processos assíncronos (microserviços #2)
+- Pipeline
+
+Solução:
+- Dead letter queue
+- Filas de re-tentativas
