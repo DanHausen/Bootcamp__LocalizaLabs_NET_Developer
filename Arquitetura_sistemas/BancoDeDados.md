@@ -22,3 +22,17 @@ Modelos de bancos de dados:
 - Orientado a objetos. Informação de objetos complexos inseridos no banco.
 - Objeto-relacional. É a mistura do modelo relacional e do orientado a objetos.
 - Big Data. Engloba modelo não estruturado, semi estruturado, estruturado. Grande massa de informação.
+
+## Bancos de dados relacionais SGDBR ou RDBMS
+
+As tabelas se relacionam através das chaves. 
+Para iniciar a criação do banco relacional, são necessárias modelagens:
+1. Modelo Conceitual MER - Modelo Entidade Relacionamento. Pode ser realizado através ro DER (Diagrama Entidade Relacionamento), o DER é um diagrama gráfico que utilizamos para representar as entidades, valores e relacionamentos, ele facilita nossa compreensão do comportamento do modelo.
+2. Modelo lógico - implementação. 
+
+Entidades:
+- Fraca. Depende de outras entidades para existir (como uma venda que precisa de produto e cliente para acontecer)
+- Forte. Não depende de nenhum outro dado para existir
+
+Quantidades no relacionamento:
+- 
