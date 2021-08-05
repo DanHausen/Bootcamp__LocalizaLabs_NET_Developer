@@ -35,4 +35,8 @@ Entidades:
 - Forte. Não depende de nenhum outro dado para existir
 
 Quantidades no relacionamento:
-- 
+- A relação de quantidade de cada tabela pode e deve ser definida antecipadamente através do DER para melhor entendimento
+
+Normalização:
+- É utilizado para a verificação e certificação de cada valor dentro das tabelas para evitrar repetições ou erros
+- Cada forma de normalização (1°, 2°, 3°, 4°, 5°) possuem utilização adequadas, regras, para realizar o melhor gerenciamento e organização dos dados no banco.
