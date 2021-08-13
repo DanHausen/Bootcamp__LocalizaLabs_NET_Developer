@@ -1,6 +1,10 @@
 # Docker
+
+Escalonamento vertical é aumentar a disponibilidade de CPU e memória
+Escalonamento horizontal é aumentar a disponibilidade de VMs e containers
+
 ## O que é o Docker?
-É um container
+É uma tecnologia de conteinerização que permite a criação e o uso de contêineres.
 
 Possui um **container imagem** que é um pacote com todas as dependencias para criar o container (a aplicação)
 **Dockerfile** é o arquivo de texto com todas as instruções para realizar o build na imagem
