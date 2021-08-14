@@ -21,3 +21,17 @@ Com a imagem criada, podemos instanciar o **container**, que é uma instancia da
 ## Como utilizar?
 Para utilizar o docker sem instalar, como um playground, podemos acessar o site https://labs.play-with-docker.com/
 
+## Principais comandos
+- Docker Run. Usado para criar o container
+- Docker Ps. Vai listar os containers
+- Docker Info. Para mostrar informações do docker
+- Docker images. São as imagens usadas para criar os container
+- Docker Exec. Usa serve para executar um binario do container
+- Docker Stop, Docker Start.
+- Docker logs. Para listar os outputs e usuários
+- Docker Inspect. Listar todas as configurações em utilização no container.
+- Docker Pull
+- Docker Commit
+- Docker tag
+- Docker login, Docker logout
+- d
