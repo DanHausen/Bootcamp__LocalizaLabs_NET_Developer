@@ -32,3 +32,23 @@ Quando uma aplicação ASP .NET MVC é criada, já é configurado um padrão de 
 
 ### Web forms
 As requisições do navegador são enviadas para as páginas, que deveriam existir fisicamente. Cada URL deveria ter uma página física que a represente.
+
+### Action Result
+É o resultado de uma ação processada por uma controller, o action result possui diversos tipos.
+
+### HTTP Verbs
+São métodos de protocolo HTTP que informa ao servidor qual ação ele deve executar (GET, POST, PUT, DELETE)
+
+### Razor
+É uma View Engine utilizada no ASP .NET MVC.
+Seu principal objetivo é simplificar o desenvolvimento de aplicações ASP .NET pois deixa o código mais simples, fácil e legível.
+
+Benefícios:
+- Menor curva de aprendizagem, por sem baseado em C#
+- Por possuir uma sintaxe limpa, requer que o programador digite menos para chegar a um resultado
+- E possui Intellisense no Visual Studio
+
+### Middlewares
+São componentes (classes) que são executado em todas as solicitações na aplicação ASP .NET
+Normalmente existem vários middlewares na aplicação e nós definimos sua ordem de execução.
+Cada middleware adiciona 
