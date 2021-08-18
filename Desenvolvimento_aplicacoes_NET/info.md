@@ -30,6 +30,8 @@ As requisições do navegador são enviadas para uma ação da camada Controller
 
 Quando uma aplicação ASP .NET MVC é criada, já é configurado um padrão de rota default. Mas é possível criar padrões personalizados, que servem para maior flexibilidade, e assim é possível gerar URLs mais amigaveis para o usuário.
 
+![image-20210818182515809](https://i.loli.net/2021/08/19/97fVwNsnTrEo2hL.png)
+
 ### Web forms
 As requisições do navegador são enviadas para as páginas, que deveriam existir fisicamente. Cada URL deveria ter uma página física que a represente.
 
@@ -52,3 +54,15 @@ Benefícios:
 São componentes (classes) que são executado em todas as solicitações na aplicação ASP .NET
 Normalmente existem vários middlewares na aplicação e nós definimos sua ordem de execução.
 Cada middleware adiciona 
+
+![image-20210818182940419](https://i.loli.net/2021/08/19/RsqGbM6aoOcl1AV.png)
+
+
+
+### Startup.cs
+
+Essa classe é responsável por ser o ponto inicial do projeto. Dentro dessa classe existem métodos que são responsáveis por configurar o projeto:
+
+- ConfigureServices. Esse método é responsável por registrar as classes ao container de dependência, após isso a classe poderá ser usada em qualquer local da aplicação desde que seja incluída no construtor da classe em que desejo utilizar.
+- Configure. Esse método controla o pipeline da aplicação, é nesse métodos que são especificados os middlewares a serem utilizados. É recomendado especificar apenas os métodos que serão utilizados para evitar queda na performance.
+
